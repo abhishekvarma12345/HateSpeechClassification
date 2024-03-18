@@ -35,7 +35,6 @@ jobs:
           command: aws ecr get-login-password --region eu-south-1 | docker login --username AWS --password-stdin 679448834216.dkr.ecr.eu-south-1.amazonaws.com
           
           
-
       - run:
           name: pull image from private repository
           command: docker pull 679448834216.dkr.ecr.eu-south-1.amazonaws.com/hatedemo:latest
