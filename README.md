@@ -11,6 +11,10 @@ While an LLM could potentially solve this problem, the high deployment costs for
 2. **Customer Support:** ensure that customers do not use hate speech when interacting with these chatbots.
 3. **Content Recommendation Systems:** to avoid recommending content that contains hate speech.
 
+# Training and Prediction Pipeline:
+![Pipeline Diagram](./flowcharts/Pipeline%20Diagram.png)
+*Note: Find each of the pipeline components code flow diagrams in folder: [flowcharts](https://github.com/abhishekvarma12345/HateSpeechClassification/tree/main/flowcharts)*
+
 ## Project Workflows
 - constants
 - config_enity
@@ -18,8 +22,6 @@ While an LLM could potentially solve this problem, the high deployment costs for
 - components
 - pipeline
 - app.py
-
-
 
 ## How to run?
 
@@ -38,7 +40,6 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-
 
 # Gcloud cli
 https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
