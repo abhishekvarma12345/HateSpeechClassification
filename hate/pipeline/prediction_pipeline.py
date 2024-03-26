@@ -33,8 +33,9 @@ class PredictionPipeline:
         logging.info("Entered the get_model_from_gcloud method of PredictionPipeline class")
         try:
             # Loading the best model from s3 bucket
-            os.makedirs(self.model_path, exist_ok=True)
-            self.gcloud.sync_folder_from_gcloud(self.bucket_name, self.model_name, self.model_path)
+            if not os.path.exists(os.path.join(self.model_path, self.model_name)):
+                os.makedirs(self.model_path, exist_ok=True)
+                self.gcloud.sync_folder_from_gcloud(self.bucket_name, self.model_name, self.model_path)
             best_model_path = os.path.join(self.model_path, self.model_name)
             logging.info("Exited the get_model_from_gcloud method of PredictionPipeline class")
             return best_model_path

@@ -11,9 +11,6 @@ While an LLM could potentially solve this problem, the high deployment costs for
 2. **Customer Support:** ensure that customers do not use hate speech when interacting with these chatbots.
 3. **Content Recommendation Systems:** to avoid recommending content that contains hate speech.
 
-# Pipeline Inplementation:
-
-
 ## Project Workflows
 - constants
 - config_enity
